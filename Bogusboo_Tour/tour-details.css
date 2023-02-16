@@ -1,0 +1,132 @@
+body {
+
+    font-family: Avenir Next,
+        Helvetica,
+        Arial,
+        serif;
+
+}
+
+section{
+    padding: 0 !important;
+}
+
+
+.iamgeOverlay {
+    position: relative;
+    width: 100%;
+    
+
+}
+
+.overlayText {
+    position: absolute;
+    /* background-color: rgba(0, 0, 0, .6); */
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.fix-image {
+    overflow: hidden;
+    /* background-color: aqua; */
+}
+
+/* feature-list */
+.feature-list {
+    margin: 10px;
+}
+
+.feature {
+    background-color: #ebf0f4;
+    color: #1c3c6b;
+    padding: 5px 10px;
+    border-radius: 3px;
+    display: inline-block;
+    font-size: .8571428571rem;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+/* Dropdown */
+#details {
+    border-bottom: 1px solid #ebf0f4;
+    position: relative;
+    box-sizing: border-box;
+    display: block;
+}
+
+.accordion-button {
+    /* color: var(--bs-accordion-active-color); */
+    background-color: rgba(245, 40, 145, 0.01) !important;
+    box-shadow: 0 !important;
+    /* border: rgba(245, 40, 145, 0.01) !important;; */
+}
+
+.accordion-button:not(.collapsed) {
+    color: #1c3c6b !important;
+}
+
+.custom-accordion-button {
+    color: #1c3c6b;
+}
+
+.check-color {
+    color: aqua;
+}
+
+
+
+/* ------tour-search-bar Button----- */
+.btn-secondary {
+    font-weight: 600;
+    border-color: #fccd03 !important;
+    background-color: #fccd03 !important;
+    color: #1c3c6b !important;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+/* Footer style */
+#footer {
+    background-color: #1c3c6b;
+    padding: 1.5rem 0;
+    color: #fff;
+}
+
+.footer-linking {
+
+    list-style: none;
+
+}
+
+.footer-linking a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+}
+
+.footer-linking img {
+    padding: 10px;
+}
+
+.row>* {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    margin-top: 0 !important;
+}
+
+.payment-icon {
+    display: grid;
+    grid-template-columns: repeat(3, 0.2fr);
+    justify-content: center;
+    align-items: center;
+}

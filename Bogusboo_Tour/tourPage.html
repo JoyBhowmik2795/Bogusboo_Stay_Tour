@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="tourPage.css">
+    <link href="assets/css/styles.css" rel="stylesheet">
+
+    <!-- Bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Font awesome link -->
+    <script src="https://kit.fontawesome.com/b824e39f4a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+    <!-- ============================================================== -->
+    <!-- Top header  -->
+    <!-- ==============================================================
+
+
+     <!-- Start Navigation -->
+
+    <div class="header header-light">
+        <div class="container">
+
+            <nav id="navigation" class="navigation navigation-landscape">
+                <div class="nav-header col-lg-4">
+
+                    <a class="nav-brand" href="../Stay_UI/index.html">
+                        <img src="assets/img/BogusbooLogo.png" class="logo" alt="BogusbooLogo.jpg"  />
+                    </a>
+
+                    <div class="nav-toggle"></div>
+                    <div class="mobile_nav">
+                        <ul>
+
+                            <li><a href="#" data-toggle="modal" data-target="#login"><i class="fas fa-user-circle fa-lg"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+                <div class="nav-menus-wrapper" style="transition-property: none;">
+
+                    <ul class="nav-menu justify-content-center">
+
+                        <li class="active ml-4">
+                            <a href="../Stay_UI/index.html" class="nav-item active">Home</a>
+                        </li>
+                        <li class="active ml-4">
+                            <a href="../Stay_UI/stay_List.html" class="nav-item active">Stay</a>
+                        </li>
+
+                        <li class="active ml-4">
+                            <a href="../Bogusboo_Tour/tourPage.html">Tours</a>
+                        </li>
+
+                        <li class="active ml-4">
+                            <a href="#">Rental</a>
+                        </li>
+
+                    </ul>
+
+                    <ul class="nav-menu nav-menu-social align-to-right">
+
+                        <li class="add-listing bg-secondary text-white">
+                            <a href="#" data-toggle="modal" data-target="#login" class="theme-cl ">
+                                <i class="fa fa-list"></i><i class="fas fa-user"></i>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </nav>
+
+        </div>
+    </div>
+
+    <!-- End Navigation -->
+    <!-- ============================================================== -->
+    <!-- Top header  -->
+    <!-- ============================================================== -->
+
+
+
+    <section class="container ">
+        <div class="container-fluid">
+            <div class="row py-3 rounded">
+                <div class="col-lg-10 col-sm-12 border border-secondary rounded ">
+                    <p>LOCATION/TOUR</p>
+                </div>
+
+                <div class="col-lg-2 col-sm-12 border border-secondary rounded bg-warning ">
+                    <a class="navbar-brand    rounded fw-semibold" href="#">Modify 
+                        Search</a>
+                </div>
+            </div>
+        </div>
+        <div class="row py-3 rounded ">
+
+            <div class="col-lg-3  col-sm-12 align-items-center ">
+                <div>
+                    <!-- property Sidebar -->
+
+                    <div class=" shadow p-3 mb-5">
+                        <div class="page-sidebar p-0">
+                            <a class="filter_links" data-toggle="collapse" href="#fltbox" role="button"
+                               aria-expanded="false" aria-controls="fltbox">
+                                Open Advance Filter<i class="fa fa-sliders-h ml-2"></i>
+                            </a>
+                            <div class="collapse" id="fltbox">
+                                <!-- Find New Property -->
+                                <div class="sidebar-widgets p-4">
+
+                                    <div class="form-group">
+                                        <div class="input-with-icon">
+                                            <input type="text" class="form-control" placeholder="Neighborhood">
+                                            <i class="ti-search"></i>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="input-with-icon">
+                                            <input type="text" class="form-control" placeholder="Location">
+                                            <i class="ti-location-pin"></i>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="simple-input">
+                                            <select id="ptype" class="form-control">
+                                                <option value="0">Select Your Room</option>
+                                                <option value="1">Apartment</option>
+                                                <option value="2">Condo</option>
+                                                <option value="3">Family</option>
+                                                <option value="4">Houses</option>
+                                                <option value="5">Villa</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="form-group">
+                                        <div class="simple-input">
+                                            <select id="price" class="form-control">
+                                                <option value="0">Select Price</option>
+                                                <option value="1">Less Then $1000</option>
+                                                <option value="2">$1000 - $2000</option>
+                                                <option value="3">$2000 - $3000</option>
+                                                <option value="4">$3000 - $4000</option>
+                                                <option value="5">Above $5000</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="simple-input">
+                                            <select id="bedrooms" class="form-control">
+                                                <option value="0">Select Bedrooms</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="simple-input">
+                                            <select id="bathrooms" class="form-control">
+                                                <option value="">Select Bathroom</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="simple-input">
+                                            <select id="garage" class="form-control">
+                                                <option value="0">Select Garage</option>
+                                                <option value="1">Any Type</option>
+                                                <option value="2">Yes</option>
+                                                <option value="3">No</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-sm-6">
+                                            <div class="form-group">
+                                                <div class="simple-input">
+                                                    <input type="text" class="form-control" placeholder="Min Area">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-6">
+                                            <div class="form-group">
+                                                <div class="simple-input">
+                                                    <input type="text" class="form-control" placeholder="Max Area">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 pt-4 pb-4">
+                                            <h6>Choose Price</h6>
+                                            <div class="rg-slider">
+                                                <input type="text" class="js-range-slider" name="my_range" value="" />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 pt-4">
+                                            <h6>Advance Features</h6>
+                                            <ul class="row p-0 m-0">
+
+                                                <li class="col-lg-6 col-md-6 p-0">
+                                                    <input id="a-2" class="checkbox-custom" name="a-2" type="checkbox">
+                                                    <label for="a-2" class="checkbox-custom-label">Bedding</label>
+                                                </li>
+                                                <li class="col-lg-6 col-md-6 p-0">
+                                                    <input id="a-3" class="checkbox-custom" name="a-3" type="checkbox">
+                                                    <label for="a-3" class="checkbox-custom-label">Heating</label>
+                                                </li>
+                                                <li class="col-lg-6 col-md-6 p-0">
+                                                    <input id="a-4" class="checkbox-custom" name="a-4" type="checkbox">
+                                                    <label for="a-4" class="checkbox-custom-label">Internet</label>
+                                                </li>
+                                                <li class="col-lg-6 col-md-6 p-0">
+                                                    <input id="a-5" class="checkbox-custom" name="a-5" type="checkbox">
+                                                    <label for="a-5" class="checkbox-custom-label">Microwave</label>
+                                                </li>
+
+                                                <li class="col-lg-6 col-md-6 p-0">
+                                                    <input id="a-7" class="checkbox-custom" name="a-7" type="checkbox">
+                                                    <label for="a-7" class="checkbox-custom-label">Terrace</label>
+                                                </li>
+                                                <li class="col-lg-6 col-md-6 p-0">
+                                                    <input id="a-8" class="checkbox-custom" name="a-8" type="checkbox">
+                                                    <label for="a-8" class="checkbox-custom-label">Balcony</label>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 pt-4">
+                                            <button class="btn theme-bg rounded full-width">Find New Home</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-9 col-sm-12 ">
+                <!-- ---------------------------------->
+                <!-- Tour Manubar -->
+                <!-- ------------------------------------>
+                <div class="row">
+                    <div class="">
+                        <nav class="navbar navbar-expand-lg ">
+                            <div class="">
+
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                                        aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+                                    <div class="navbar-nav text-black  navText ">
+
+                                        <div class="bg-secondary-subtle  shadow  mb-5 rounded d-flex align-items-center">
+                                            <a class="nav-link p-2" href="#">Domistic Trip </a>
+                                            <!-- <i class="fa-sharp fa-solid fa-earth-europe"></i> -->
+
+                                            <img class="w-50 max-auto" src="images/Womens-special.png" alt="">
+                                        </div>
+
+                                        <div class="bg-secondary-subtle ml-3 shadow  mb-5 rounded d-flex align-items-center">
+                                            <a class="nav-link p-2" href="#">
+                                                Global
+                                                Trip
+                                            </a>
+                                            <!-- <i class="fa-sharp fa-solid fa-earth-europe"></i> -->
+
+                                            <img class="w-50 max-auto" src="images/Womens-special.png" alt="">
+                                        </div>
+
+                                        <div class="bg-secondary-subtle ml-3 shadow  mb-5 rounded d-flex align-items-center">
+                                            <a class="nav-link p-2" href="#">
+                                                Day
+                                                Trip
+                                            </a>
+                                            <!-- <i class="fa-sharp fa-solid fa-earth-europe"></i> -->
+
+                                            <img class="w-50 max-auto" src="images/Womens-special.png" alt="">
+                                        </div>
+                                        <div class="bg-secondary-subtle ml-3 shadow  mb-5 rounded d-flex align-items-center">
+                                            <a class="nav-link p-2" href="#">Womens-special</a>
+                                            <!-- <i class="fa-sharp fa-solid fa-earth-europe"></i> -->
+
+                                            <img class="w-50 max-auto" src="images/Womens-special.png" alt="">
+                                        </div>
+                                        <div class="bg-secondary-subtle ml-3 shadow  mb-5 rounded d-flex align-items-center">
+                                            <a class="nav-link p-2" href="#">
+                                                Senior
+                                                Special
+                                            </a>
+                                            <!-- <i class="fa-sharp fa-solid fa-earth-europe"></i> -->
+
+                                            <img class="w-50 max-auto" src="images/Womens-special.png" alt="">
+                                        </div>
+                                        <div class="bg-secondary-subtle ml-3 shadow  mb-5 rounded d-flex align-items-center">
+                                            <a class="nav-link p-2" href="#">Adventure </a>
+                                            <!-- <i class="fa-sharp fa-solid fa-earth-europe"></i> -->
+
+                                            <img class="w-50 max-auto" src="images/Womens-special.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+
+                </div>
+
+
+
+
+                <!-- -----tour-card----- -->
+                <div class="row  py-3 rounded  mb-4 shadow p-3 mb-5 bg-body-tertiary align-items-center">
+                    <div class="col-lg-3 col-md-4 col-sm-12">
+                        <div class="AquaholicImage ">
+                            <a href="tour-details.html"><img class="w-100 max-auto" src="images/tourist-caravan.jpg" alt=""></a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-7 text-left col-md-7 col-sm-12">
+                        
+                            <h3>Aquaholic Tourist Caravan</h3>
+                            <div class="Aquaholic">
+                                <i class="fa-sharp fa-solid fa-location-dot"></i>
+                                <a class=" text-decoration-none" href="tour-details.html">Cox's Bazar, Bangladesh</a>
+                                <i class="fa-sharp fa-solid fa-clock"></i>
+                                <a class=" text-decoration-none" href="">9 hours</a>
+                                <i class="fa-solid fa-users"></i>
+                                <a class=" text-decoration-none" href="">From 1 to 48 people</a>
+                                <a class="d-block text-decoration-none " href="">
+                                    <i class="fa-solid fa-file-excel"></i>
+                                    Free
+                                    cancellation up to
+                                    twenty-four (24) hours before the start of the tour.
+                                </a>
+
+                                <div class=" feature-list justify-content-center">
+
+                                    <a href=""><i class="fa-solid fa-lightbulb"> </i>Sightseeing</a>
+
+                                    <a href=""><i class="fa-solid fa-cloud-sun"></i>Day Tour</a>
+
+                                    <a href=""><i class="fa-solid fa-road-barrier"></i> Marine drive</a>
+                                </div>
+                            </div>
+
+</div>
+                    <div class="col-lg-2 col-md-4 col-sm-12">
+                        <h6>Starting from</h6>
+                        <p class="fs-5 text-decoration-line-through">BDT 2,099</p>
+                        <p class="fw-bold fs-5 text-primary">BDT 1,995</p>
+                        <p><span class="text-success-emphasis">per person</span></p>
+                        <p class="text-primary fs-3">5% off</p>
+                    </div>
+                    <div class="">
+                        <h4>*5% dicount for any card payment!</h4>
+                    </div>
+
+                </div>
+
+                <!-- ---------- -->
+                <div class="row bg-secondary-subtle py-3 mt-5 rounded  mb-4 align-items-center shadow p-3 mb-5 bg-body-tertiary mt-4">
+                    <div class="col-sm-12 col-lg-4">
+                        <a href="tour-details.html"><img class="w-100 max-auto" src="images/Parasailing .jpg" alt=""></a>
+</div>
+                    <div class="col-lg-6 col-sm-12  Aquaholic ">
+                       
+                            <h3>Parasailing at FunFest Beach</h3>
+                            <i class="fa-sharp fa-solid fa-location-dot"></i>
+                            <a class=" text-decoration-none" href="">Cox's Bazar, Bangladesh</a>
+                            <i class="fa-sharp fa-solid fa-clock"></i>
+                            <a class=" text-decoration-none" href="">7 minuts</a>
+                            <i class="fa-solid fa-users"></i>
+                            <a class=" text-decoration-none" href="">From 1 to 50 people</a>
+                            <a class="d-block text-decoration-none" href="">
+                                <i class="fa-solid fa-file-excel"></i>
+                                <span>Booking can be cancelled anytime</span>
+                            </a>
+                            <p><i class="fa-solid fa-person-hiking"></i>Outdoor Activities</p>
+
+</div>
+                    <!-- price-info -->
+                    <div class="col-sm-12 col-lg-2">
+                        <h6>Starting from</h6>
+                        <p class="fs-5 text-decoration-line-through">BDT 2,000</p>
+                        <p class="fw-bold fs-5 text-primary">BDT 1,840</p>
+                        <p><span class="text-success-emphasis">per person</span></p>
+                        <p class="text-primary fs-3">8% off</p>
+
+                    </div>
+                    <div class="">
+                        <h4>*8% dicount for any card payment!</h4>
+                    </div>
+                </div>
+
+
+                <!-- ---------- -->
+                <div class="row bg-secondary-subtle py-3 rounded  mb-4 align-items-center shadow p-3 mb-5 bg-body-tertiary ">
+                    <div class="col-sm-12 col-lg-3">
+                        <a href="tour-details.html"><img class="w-100 max-auto" src="images/Radiant-Fish.jpg" alt=""></a>
+</div>
+                    <div class="col-lg-7 col-sm-12 Aquaholic">
+                        <h3>Radiant Fish World</h3>
+                        <i class="fa-sharp fa-solid fa-location-dot"></i>
+                        <a class=" text-decoration-none" href="">Cox's Bazar, Bangladesh</a>
+                        <i class="fa-sharp fa-solid fa-clock"></i>
+                        <a class=" text-decoration-none" href="">00:00:00</a>
+                        <i class="fa-solid fa-users"></i>
+                        <a class=" text-decoration-none" href="">From 1 to 200 people</a>
+                        <a class="d-block text-decoration-none" href="">
+                            <i class="fa-solid fa-file-excel"></i>
+                            <span>
+                                This tour is non-cancellable.Date of journey can not be changed after confirming the
+                                booking.
+                            </span>
+                        </a>
+                        <p><i class="fa-solid fa-children"></i>Kid Friendly</p>
+
+                    </div>
+                    <!-- price-info -->
+                    <div class="col-sm-12 col-lg-2">
+                        <h6>Starting from</h6>
+                        <p class="fs-4 text-decoration-line-through">BDT 300</p>
+                        <p class="fw-bold fs-5 text-primary">BDT 255</p>
+                        <p><span class="text-success-emphasis">per person</span></p>
+                        <p class="text-primary fs-3">5% off</p>
+                    </div>
+                    <div class="">
+                        <h4>*15% dicount for any card payment!</h4>
+                    </div>
+                </div>
+
+                <!-- ---------- -->
+                <div class="row bg-secondary-subtle py-3 rounded  mb-4 align-items-center shadow p-3 mb-5 bg-body-tertiary ">
+                    <div class="col-lg-3 col-sm-12">
+                        <a href="tour-details.html"> <img class="w-100 max-auto" src="images/camping.jpg" alt=""></a>
+</div>
+                    <div class="col-lg-7 col-sm-12 Aquaholic">
+                        
+                            <h3>Camping in Cox's Bazar</h3>
+                            <i class="fa-sharp fa-solid fa-location-dot"></i>
+                            <a class=" text-decoration-none" href="">Cox's Bazar, Bangladesh</a>
+                            <i class="fa-sharp fa-solid fa-clock"></i>
+                            <a class=" text-decoration-none" href="">a day</a>
+                            <i class="fa-solid fa-users"></i>
+                            <a class=" text-decoration-none" href="">From 1 to 100 people</a>
+                            <a class="d-block text-decoration-none" href="">
+                                <i class="fa-solid fa-file-excel"></i>
+                                <span>Free cancellation before three (3) days.</span>
+                            </a>
+                            <p><i class="fa-solid fa-person-hiking"></i>Outdoor Activities</p>
+
+</div>
+                    <!-- price-info -->
+                    <div class="col-lg-2 col-sm-12">
+                        <h5>Starting from</h5>
+                        <p class="fs-4">BDT 1,500</p>
+                        <p><span class="text-success-emphasis">per person</span></p>
+                        <p class="text-primary fs-2">8% off</p>
+                    </div>
+                    <div class="">
+                        <h4>*8% dicount for any card payment!</h4>
+                    </div>
+                </div>
+
+
+
+                <!-- ---------- -->
+                <div class="row bg-secondary-subtle py-3 rounded  mb-4 shadow p-3 mb-5 bg-body-tertiary  align-items-center">
+                    <div class="col-lg-3 col-sm-12 AquaholicImage ">
+                        <a href="tour-details.html"><img class="w-100 max-auto" src="images/Fly Dining.jpg" alt=""></a>
+</div>
+                    <div class="col-lg-7 col-sm-12 ">
+                        
+                            <h3>Fly Dining experience at Cox's Bazar</h3>
+                            <div class="Aquaholic">
+                                <i class="fa-sharp fa-solid fa-location-dot"></i>
+                                <a class=" text-decoration-none" href="">Cox's Bazar, Bangladesh</a>
+                                <i class="fa-sharp fa-solid fa-clock"></i>
+                                <a class=" text-decoration-none" href="">an hours</a>
+                                <i class="fa-solid fa-users"></i>
+                                <a class=" text-decoration-none" href="">From 1 to 20 people</a>
+                                <a class="d-block text-decoration-none " href="">
+                                    <i class="fa-solid fa-file-excel"></i>
+                                    Full
+                                    refund before five (5) days
+                                </a>
+                            </div>
+
+
+                            <div class=" feature-list justify-content-center">
+
+                                <a href=""><i class="fa-sharp fa-solid fa-snowman"></i>Outdoor Activities</a>
+
+                            </div>
+
+
+</div>
+                    <!-- price-info -->
+                    <div class="col-lg-2 col-sm-12">
+                        <h6>Start from</h6>
+                        <p class="fw-bold fs-4 text-primary">BDT 999</p>
+                        <p><span class="text-success-emphasis">per person</span></p>
+                        <!-- <button class="fw-bold fs-3 bg-warning rounded px-5 text-primary">Contineu</button> -->
+                    </div>
+                </div>
+
+                <!-- ---------- -->
+                <div class="row bg-secondary-subtle py-3 rounded  mb-4  shadow p-3 mb-5 bg-body-tertiary  align-items-center">
+                    <div class="col-sm-12 col-lg-3 AquaholicImage ">
+                        <a href="tour-details.html"><img class="w-100 max-auto" src="images/bike.jpg" alt=""></a>
+</div>
+                    <div class="col-sm-12 col-lg-7 ">
+                        <h3>Convenient Bike / Scooty Rental</h3>
+                        <div class="Aquaholic">
+                            <i class="fa-sharp fa-solid fa-location-dot"></i>
+                            <a class=" text-decoration-none" href="">Cox's Bazar, Bangladesh</a>
+                            <i class="fa-sharp fa-solid fa-clock"></i>
+                            <a class=" text-decoration-none" href="">8 hours</a>
+                            <i class="fa-solid fa-users"></i>
+                            <a class=" text-decoration-none" href="">From 1 to 2 people</a>
+                            <a class="d-block text-decoration-none " href="">
+                                <i class="fa-solid fa-file-excel"></i>
+                                Free
+                                cancellation up to twenty-four (24) hours before the start of the tour.
+                            </a>
+                        </div>
+
+
+                        <div class=" feature-list justify-content-center">
+
+                            <a href=""><i class="fa-solid fa-motorcycle"></i>Bike Rentals</a>
+                            <a href=""><i class="fa-solid fa-motorcycle"></i>Vespa Rentals</a>
+
+                        </div>
+
+
+                    </div>
+                    <!-- price-info -->
+                    <div class="col-sm-12 col-lg-2">
+                        <h6>Start from</h6>
+                        <p class="fw-bold fs-4 text-primary">BDT 350</p>
+                        <p><span class="text-success-emphasis">per person</span></p>
+                    </div>
+                </div>
+
+                <!-- ---------- -->
+
+                <div class="row bg-secondary-subtle py-3 rounded  mb-4 shadow p-3 mb-5 bg-body-tertiary  align-items-center">
+                    <div class="col-lg-3 col-sm-12 AquaholicImage ">
+                        <a href="tour-details.html"> <img class="w-100 max-auto" src="images/MV Karnafuly Express.webp" alt=""></a>
+</div>
+                    <div class="col-lg-7 col-sm-12 ">
+                        
+                            <h3>Cox's Bazar - Saint Martin's Island: MV Karnafuly Express</h3>
+                            <div class="Aquaholic">
+                                <i class="fa-sharp fa-solid fa-location-dot"></i>
+                                <a class=" text-decoration-none" href="">Cox's Bazar, Bangladesh</a>
+                                <i class="fa-sharp fa-solid fa-clock"></i>
+                                <a class=" text-decoration-none" href="">5 hours</a>
+                                <i class="fa-solid fa-users"></i>
+                                <a class=" text-decoration-none" href="">From 1 to 20 people</a>
+                                <a class="d-block text-decoration-none " href="">
+                                    <i class="fa-solid fa-file-excel"></i>
+                                    Eighty
+                                    percent (80%) of the ticket price will be refunded in case of cancelling the
+                                    booking.Twenty
+                                    percent (20%) of of
+                                    the ticket price must be paid to change the date of journey.
+                                </a>
+                            </div>
+
+
+                            <div class=" feature-list justify-content-center">
+
+                                <a href=""><i class="fa-sharp fa-solid fa-ship"></i>Day Cruises</a>
+                                <a href=""><i class="fa-sharp fa-solid fa-ticket-simple"></i>Tickets & Passes</a>
+
+                            </div>
+
+
+</div>
+                    <!-- price-info -->
+                    <div class="col-sm-12 col-lg-2">
+                        <h6>Start from</h6>
+                        <p class="fs-5 text-decoration-line-through">BDT 1,600</p>
+
+                        <p class="fw-bold fs-4 text-primary">BDT 1,520</p>
+                        <p><span class="text-success-emphasis">per person</span></p>
+                        <p class="text-primary fs-4">5% off</p>
+                    </div>
+                    <div class="mt-3">
+                        <h4>*5% dicount for any card payment!</h4>
+                    </div>
+                </div>
+
+                <!-- ---------- -->
+                <div class="row bg-secondary-subtle py-3 rounded  mb-4 shadow p-3 mb-5 bg-body-tertiary align-items-center">
+                    <div class="col-lg-3 col-sm-12 AquaholicImage ">
+                        <a href="tour-details.html"><img class="w-100 max-auto" src="images/Kayaking.jpeg" alt=""></a>
+</div>
+                    <div class="col-lg-7 col-sm-12 ">
+                        <h3>Kayaking in Reju Khal</h3>
+                        <div class="Aquaholic">
+                            <i class="fa-sharp fa-solid fa-location-dot"></i>
+                            <a class=" text-decoration-none" href="">Cox's Bazar, Bangladesh</a>
+                            <i class="fa-sharp fa-solid fa-clock"></i>
+                            <a class=" text-decoration-none" href="">30 minutes</a>
+                            <i class="fa-solid fa-users"></i>
+                            <a class=" text-decoration-none" href="">From 1 to 16 people</a>
+                            <a class="d-block text-decoration-none " href="">
+                                <i class="fa-solid fa-file-excel"></i>
+                                Free
+                                cancellation up to twenty-four (24) hours before the start of the tour
+                            </a>
+                        </div>
+
+
+                        <div class=" feature-list justify-content-center">
+
+                            <a href=""><i class="fa-solid fa-lightbulb"> </i>Outdoor Activities</a>
+
+                            <a href=""><i class="fa-solid fa-cloud-sun"></i>Day Tour</a>
+
+                            <a href=""><i class="fa-solid fa-road-barrier"></i> Marine drive</a>
+                        </div>
+                    </div>
+                    <!-- price-info -->
+                    <div class="col-lg-2 col-sm-12">
+                        <h5>Starting from</h5>
+                        <p class="fs-5 text-decoration-line-through">BDT 250</p>
+                        <p class="fw-bold fs-4 text-primary">BDT 200</p>
+                        <p><span class="text-success-emphasis">per person</span></p>
+                        <p class="text-primary fs-4">20% off</p>
+                    </div>
+                    <div class="">
+                        <h4>*20% dicount for any card payment!</h4>
+                    </div>
+                </div>
+
+                <!-- ---------- -->
+                <div class="row  bg-secondary-subtle py-3 rounded  mb-4 shadow p-3  bg-body-tertiary align-items-center">
+                    <div class="col-sm-12 col-lg-3 AquaholicImage ">
+                        <a href="tour-details.html"><img class="w-100 max-auto" src="images/Awlia.jpg" alt=""></a>
+</div>
+                    <div class="col-lg-7 col-sm-12 ">
+                       
+                            <h3>Kayaking in Reju Khal</h3>
+                            <div class="Aquaholic">
+                                <i class="fa-sharp fa-solid fa-location-dot"></i>
+                                <a class=" text-decoration-none" href="">Cox's Bazar, Bangladesh</a>
+                                <i class="fa-sharp fa-solid fa-clock"></i>
+                                <a class=" text-decoration-none" href="">5 hours</a>
+                                <i class="fa-solid fa-users"></i>
+                                <a class=" text-decoration-none" href="">From 1 to 50 people</a>
+                                <a class="d-block text-decoration-none " href="">
+                                    <i class="fa-solid fa-file-excel"></i>
+                                    Eighty
+                                    percent (80%) of the ticket price will be refunded in case of cancelling the
+                                    booking.Twenty
+                                    percent (20%) of of
+                                    the ticket price must be paid to change the date of journey.
+                                </a>
+                            </div>
+
+
+                            <div class=" feature-list justify-content-center">
+
+                                <a href=""><i class="fa-sharp fa-solid fa-ship"></i>Cruises, Sailing </a>
+
+                                <a href=""> <i class="fa-sharp fa-solid fa-ticket-simple"></i>Day Cruises</a>
+
+                                <a href=""><i class="fa-solid fa-road-barrier"></i> Tickets & Passes</a>
+                            </div>
+</div>
+                    <!-- price-info -->
+                    <div class="col-lg-2 col-sm-12">
+                        <h6>Starting from</h6>
+                        <p class="fs-5 text-decoration-line-through">BDT 1600</p>
+                        <p class="fw-bold fs-4 text-primary">BDT 1,488</p>
+                        <p><span class="text-success-emphasis">per person</span></p>
+                        <p class="text-primary fs-4">7% off</p>
+                    </div>
+                    <div class="">
+                        <h4>*7% dicount for any card payment!</h4>
+                    </div>
+                </div>
+
+                <!-- ---------- -->
+                <div class="row bg-secondary-subtle py-3 rounded  mb-4 shadow p-3 mb-5 bg-body-tertiary align-items-center">
+                    <div class="col-sm-12 col-lg-3 AquaholicImage ">
+                        <a href="tour-details.html"> <img class="w-100 max-auto" src="images/Spiritual Ramu Tour.jpg" alt=""></a>
+</div>
+                    <div class="col-sm-12 col-lg-7">
+                       
+                            <h3>Spiritual Ramu Tour</h3>
+                            <div class="Aquaholic">
+                                <i class="fa-sharp fa-solid fa-location-dot"></i>
+                                <a class=" text-decoration-none" href="">Cox's Bazar, Bangladesh</a>
+                                <i class="fa-sharp fa-solid fa-clock"></i>
+                                <a class=" text-decoration-none" href="">3 hours</a>
+                                <i class="fa-solid fa-users"></i>
+                                <a class=" text-decoration-none" href="">From 1 to 50 people</a>
+                                <a class="d-block text-decoration-none " href="">
+                                    <i class="fa-solid fa-file-excel"></i>
+                                    Free
+                                    Cancellation up to forty-eight (48) hours before the start of the tour.
+                                </a>
+                            </div>
+
+
+                            <div class=" feature-list justify-content-center">
+
+                                <a href=""><i class="fa-solid fa-lightbulb"> </i>Sightseeing</a>
+
+                                <a href=""><i class="fa-solid fa-cloud-sun"></i>Day Tour</a>
+
+                                <a href=""><i class="fa-solid fa-road-barrier"></i> Long Drive</a>
+                            </div>
+</div>
+                    <!-- price-info -->
+                    <div class="col-sm-12 col-lg-2">
+                        <h5>Starting from</h5>
+                        <p class="fs-5 text-decoration-line-through">BDT 460</p>
+                        <p class="fw-bold fs-4 text-primary">BDT 437</p>
+                        <p><span class="text-success-emphasis">per person</span></p>
+                        <p class="text-primary fs-4">5% off</p>
+                    </div>
+                    <div class="">
+                        <h4>*5% dicount for any card payment!</h4>
+                    </div>
+
+                </div>
+
+                <!-- Selecet custom tour -->
+                <div class="row bg-secondary-subtle py-3 rounded  mb-4 shadow p-3 mb-5 bg-body-tertiary align-items-center">
+                    <div class="navbar ">
+                        <div class="container p-4  ">
+                            <a class="navbar-brand fs-3 fw-semibold" href="#">Need a Customized Tour?</a>
+                            <a class="navbar-brand bg-warning p-2 px-3 fs-3 rounded fw-semibold" href="#">
+                                Requset
+                                Now
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Page navigation -->
+                <div class="row ">
+                    <div class="d-flex align-items-center justify-content-center col-sm-12 col-12">
+                        <nav aria-label="Page navigation example  " class="align-items-center">
+                            <ul class="pagination ">
+                                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer start -->
+    <footer class="container-fluid " id="footer">
+        <section class="container">
+            <div>
+                <div class="row ">
+                    <div class="col-lg-3 col-md-3 col-sm-12 ">
+                        <div class="row ">
+                            <h5 class="ps-4">Discover</h5>
+                            <div class="col-lg-6">
+                                <ul class="footer-linking">
+                                    <li class=""><a href="" class="">Home</a></li>
+                                    <li class=""><a href="" class="">Terms</a></li>
+                                    <li class=""><a href="" class="">Talent & Culture</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <ul class="footer-linking">
+                                    <li class=""><a href="" class="">Refund Policy</a></li>
+                                    <li class=""><a href="" class="">EMI Policy</a></li>
+                                    <li class=""><a href="" class="">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-12 mb-2">
+                        <h5 class="text-center pe-4">Payment Methods</h5>
+                        <ul class="list-unstyled payment-icon">
+                            <li><img src="images/footer-img/am-ex.svg" alt=""></li>
+                            <li><img src="images/footer-img/bkash.svg" alt=""></li>
+                            <li><img src="images/footer-img/dbbl.svg" alt=""></li>
+                            <li><img src="images/footer-img/nagod.svg" alt=""></li>
+                            <li><img src="images/footer-img/payoneer.svg" alt=""></li>
+                            <li><img src="images/footer-img/tap.svg" alt=""></li>
+                            <li><img src="images/footer-img/union.svg" alt=""></li>
+                            <li><img src="images/footer-img/upay.svg" alt=""></li>
+                            <li><img src="images/footer-img/visa.svg" alt=""></li>
+                        </ul>
+
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-12 mb-2">
+                        <h5>Need Help ?</h5>
+                        <p>
+                            We are Always here for you! Knock us on Messenger anytime or Call our Hotline (10AM - 10PM).
+                        </p>
+                    </div>
+
+
+                    <div class="col-lg-3 col-md-3 col-sm-12 mb-2">
+                        <div>
+                            <h5 class="ps-4">Contact</h5>
+                            <ul class="footer-linking">
+                                <li class="footer-link "><a href="mailto:info@gozayaan.com">info@gozayaan.com</a></li>
+                                <li class="footer-link "><a href="">+88 09678 332211</a></li>
+                            </ul>
+                            <ul class="footer-linking  d-flex justify-content-evenly">
+                                <li class="social-icon">
+                                    <a href="https://www.facebook.com/GoZayaanBD" target="_blank">
+                                        <i class="icon fab fa-facebook-f fs-4"></i>
+                                    </a>
+                                </li>
+                                <li class="social-icon">
+                                    <a href="https://www.youtube.com/channel/UCPcc3SEA1Ig3QMqNaW91-Ng"
+                                       target="_blank"><i class="icon fab fa-youtube fs-4"></i></a>
+                                </li>
+                                <li class="social-icon">
+                                    <a href="https://www.instagram.com/gozayaan/" target="_blank">
+                                        <i class="icon fab fa-instagram fs-4"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr class="separator">
+                </div>
+
+
+            </div>
+
+
+
+            <div class="row footer-copyright align-items-center p-3">
+                <div class="col-md-6">
+                    <img src="images/footer-img/go-zayaan-logo-white.svg" width="" height=""
+                         class="footer-logo">
+                </div>
+                <div class="col-md-6 d-flex justify-content-end">
+                    <p class="text-small-regular "><i class="fa-regular fa-copyright"></i> Copyright GoZayaan Ltd.</p>
+                </div>
+            </div>
+
+        </section>
+    </footer>
+    <!-- Footer end -->
+
+    <!-- Log In Modal -->
+    <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="registermodal" aria-hidden="true">
+        <div class="modal-dialog modal-xl login-pop-form" role="document">
+            <div class="modal-content overli" id="registermodal">
+                <div class="modal-body p-0">
+                    <div class="resp_log_wrap">
+                        <div class="resp_log_thumb" style="background:url(assets/img/p-5.png)no-repeat;"></div>
+                        <div class="resp_log_caption">
+                            <span class="mod-close" data-dismiss="modal" aria-hidden="true"><i class="ti-close"></i></span>
+                            <div class="edlio_152">
+                                <ul class="nav nav-pills tabs_system center" id="pills-tab" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" id="pills-login-tab" data-toggle="pill" href="#pills-login" role="tab" aria-controls="pills-login" aria-selected="true"><i class="fas fa-sign-in-alt mr-2"></i>Login</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="pills-signup-tab" data-toggle="pill" href="#pills-signup" role="tab" aria-controls="pills-signup" aria-selected="false"><i class="fas fa-user-plus mr-2"></i>Register</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="pills-login-tab">
+                                    <div class="login-form">
+                                        <form>
+
+                                            <div class="form-group">
+                                                <label>User Name</label>
+                                                <div class="input-with-icon">
+                                                    <input type="text" class="form-control">
+                                                    <i class="ti-user"></i>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label>Password</label>
+                                                <div class="input-with-icon">
+                                                    <input type="password" class="form-control">
+                                                    <i class="ti-unlock"></i>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <div class="eltio_ol9">
+                                                    <div class="eltio_k1">
+                                                        <input id="dd" class="checkbox-custom" name="dd" type="checkbox">
+                                                        <label for="dd" class="checkbox-custom-label">Remember Me</label>
+                                                    </div>
+                                                    <div class="eltio_k2">
+                                                        <a href="#">Lost Your Password?</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <button type="submit" class="btn btn-md full-width pop-login">Login</button>
+                                            </div>
+
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="pills-signup" role="tabpanel" aria-labelledby="pills-signup-tab">
+                                    <div class="login-form">
+                                        <form>
+
+                                            <div class="form-group">
+                                                <label>Full Name</label>
+                                                <div class="input-with-icon">
+                                                    <input type="text" class="form-control">
+                                                    <i class="ti-user"></i>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label>Email ID</label>
+                                                <div class="input-with-icon">
+                                                    <input type="email" class="form-control">
+                                                    <i class="ti-user"></i>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label>Password</label>
+                                                <div class="input-with-icon">
+                                                    <input type="password" class="form-control">
+                                                    <i class="ti-unlock"></i>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <div class="eltio_ol9">
+                                                    <div class="eltio_k1">
+                                                        <input id="dds" class="checkbox-custom" name="dds" type="checkbox">
+                                                        <label for="dds" class="checkbox-custom-label">By using the website, you accept the terms and conditions</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <button type="submit" class="btn btn-md full-width pop-login">Register</button>
+                                            </div>
+
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modal -->
+
+    <a id="back2Top" class="top-scroll" title="Back to top" href="#"><i class="ti-arrow-up"></i></a>
+
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/ion.rangeSlider.min.js"></script>
+    <script src="assets/js/select2.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/slider-bg.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/imagesloaded.js"></script>
+    <script src="assets/js/daterangepicker.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+    <!-- ============================================================== -->
+    <!-- This page plugins -->
+    <!-- ============================================================== -->
+
+
+    <!-- Bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+            crossorigin="anonymous"></script>
+
+</body>
+
+</html>

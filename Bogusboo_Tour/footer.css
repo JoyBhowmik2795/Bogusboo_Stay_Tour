@@ -1,0 +1,35 @@
+#footer {
+    background-color: #1c3c6b;
+    padding: 1.5rem 0;
+    color: #fff;
+}
+
+.footer-linking {
+
+    list-style: none;
+
+}
+
+.footer-linking a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+}
+
+.footer-linking img {
+    padding: 10px;
+}
+
+.row>* {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    margin-top: 0 !important;
+}
+
+.payment-icon {
+    display: grid;
+    grid-template-columns: repeat(3, 0.2fr);
+    justify-content: center;
+    align-items: center;
+}
+
